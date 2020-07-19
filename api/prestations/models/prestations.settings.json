@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prestations",
+  "info": {
+    "name": "prestations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "contenu": {
+      "type": "richtext"
+    },
+    "html": {
+      "type": "richtext"
+    }
+  }
+}

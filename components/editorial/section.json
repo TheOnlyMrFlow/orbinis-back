@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_editorial_sections",
+  "info": {
+    "name": "section",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "contenu": {
+      "type": "text"
+    }
+  }
+}

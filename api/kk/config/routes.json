@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kk",
+      "handler": "kk.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kk",
+      "handler": "kk.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kk",
+      "handler": "kk.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_cat_comps",
+  "info": {
+    "name": "comp",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "dat": {
+      "type": "date"
+    }
+  }
+}

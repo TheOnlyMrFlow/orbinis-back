@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projets",
+  "info": {
+    "name": "Projets"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Projet": {
+      "type": "component",
+      "repeatable": false,
+      "component": "editorial.projet"
+    }
+  }
+}

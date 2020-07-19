@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "kks",
+  "info": {
+    "name": "kk"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "jj": {
+      "type": "integer"
+    },
+    "jnk": {
+      "type": "richtext"
+    }
+  }
+}

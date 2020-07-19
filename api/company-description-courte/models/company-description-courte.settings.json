@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "company_description_courtes",
+  "info": {
+    "name": "company-description-courte"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "editorial.section"
+    }
+  }
+}
