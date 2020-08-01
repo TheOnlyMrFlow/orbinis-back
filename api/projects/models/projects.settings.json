@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Projects"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "subTitle": {
+      "type": "text",
+      "minLength": 1,
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "piece",
+        "collaboration",
+        "openair"
+      ]
+    },
+    "coverPicture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "paragraphs": {
+      "type": "dynamiczone",
+      "components": [
+        "editorial.paragraph"
+      ]
+    }
+  }
+}
