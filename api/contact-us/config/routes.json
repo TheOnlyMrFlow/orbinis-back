@@ -1,0 +1,9 @@
+{
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/contact-us",
+        "handler": "contact-us.post"
+      }
+    ]
+  }
