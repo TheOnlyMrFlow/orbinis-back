@@ -6,19 +6,24 @@
 
 module.exports = {
   post: async (ctx, next) => {
+    strapi.log.debug('coucou');
     try {
       const reqBody = ctx.request.body;
       await sendFeedbackToCustomer(reqBody.customerName, reqBody.customerAddress,reqBody.customerMessage)
       await notifyOrbinisStaff(reqBody.customerName, reqBody.customerAddress,reqBody.customerMessage)
+      ctx.send({
+        message: 'Ok'
+    }, 200);
     } catch (err) {
-      ctx.body = err;
-      ctx.status = 500;
+      ctx.send({
+        message: 'An internal server error occured'
+    }, 500);
     }
   }
 };
 
 async function sendFeedbackToCustomer(customerName, customerAddress, customerMessage) {
-    return strapi.plugins['email'].services.email.send({
+    await strapi.plugins['email'].services.email.send({
       to: customerAddress,
       from: process.env.MAIL_SENDER_ADDRESS,
       replyTo: process.env.MAIL_SENDER_ADDRESS,
@@ -32,7 +37,7 @@ async function sendFeedbackToCustomer(customerName, customerAddress, customerMes
 }
 
 async function notifyOrbinisStaff(customerName, customerAddress, customerMessage) {
-  return strapi.plugins['email'].services.email.send({
+  await strapi.plugins['email'].services.email.send({
     to: process.env.MAIL_SENDER_ADDRESS,
     from: process.env.MAIL_NOTIFIER_ADDRESS,
     replyTo: process.env.MAIL_NOTIFIER_ADDRESS,
