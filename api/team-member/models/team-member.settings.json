@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_members",
+  "info": {
+    "name": "TeamMember"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "role": {
+      "type": "string"
+    }
+  }
+}
