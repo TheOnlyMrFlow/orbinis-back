@@ -2,19 +2,19 @@ module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
     default: {
-      connector: 'bookshelf',
+      connector: 'mongoose',
       settings: {
-        client: 'pg',
-        host: `${process.env.DATABASE_HOST}`,
-        user: `${process.env.DATABASE_USER}`,
-        password: `${process.env.DATABASE_PASSWORD}`,
-        database: `${process.env.DATABASE_NAME}`,
-        charset: 'utf8',
-        ssl: { "rejectUnauthorized": false }
+        host: env('MONGO_HOST'),
+        srv: true,
+        port: 27017,
+        database: 'srapi',
+        username: env('MONGO_USER'),
+        password: env('MONGO_PASSWORD'),
       },
       options: {
-        useNullAsDefault: true,
-      },
-    },
-  },
+        authenticationDatabase: 'admin',
+        ssl: true
+      }
+    }
+  }
 });
