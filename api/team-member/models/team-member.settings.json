@@ -12,10 +12,16 @@
     "name": {
       "type": "string"
     },
-    "description": {
+    "description_FR": {
       "type": "text"
     },
-    "role": {
+    "description_EN": {
+      "type": "text"
+    },
+    "role_FR": {
+      "type": "string"
+    },
+    "role_EN": {
       "type": "string"
     }
   }

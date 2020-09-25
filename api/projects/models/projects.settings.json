@@ -2,19 +2,29 @@
   "kind": "collectionType",
   "collectionName": "projects",
   "info": {
-    "name": "Projects"
+    "name": "project"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "title": {
+    "title_FR": {
       "type": "string",
       "required": true,
       "minLength": 1
     },
-    "subTitle": {
+    "title_EN": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "subTitle_FR": {
+      "type": "text",
+      "minLength": 1,
+      "required": true
+    },
+    "subTitle_EN": {
       "type": "text",
       "minLength": 1,
       "required": true
@@ -22,9 +32,9 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "piece",
-        "collaboration",
-        "openair"
+        "show",
+        "collab",
+        "street-show"
       ]
     },
     "coverPicture": {

@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
         host: env('MONGO_HOST'),
         srv: true,
         port: 27017,
-        database: 'srapi',
+        database: 'strapi',
         username: env('MONGO_USER'),
         password: env('MONGO_PASSWORD'),
       },

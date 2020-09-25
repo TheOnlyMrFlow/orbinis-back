@@ -1,12 +1,17 @@
 {
   "collectionName": "components_editorial_paragraphs",
   "info": {
-    "name": "Paragraph",
+    "name": "paragraph",
     "icon": "align-right"
   },
   "options": {},
   "attributes": {
-    "content": {
+    "content_FR": {
+      "type": "text",
+      "required": true,
+      "minLength": 10
+    },
+    "content_EN": {
       "type": "text",
       "required": true,
       "minLength": 10

@@ -6,10 +6,16 @@
   },
   "options": {},
   "attributes": {
-    "titre": {
+    "title_FR": {
       "type": "string"
     },
-    "contenu": {
+    "title_EN": {
+      "type": "string"
+    },
+    "content_FR": {
+      "type": "text"
+    },
+    "content_EN": {
       "type": "text"
     }
   }
