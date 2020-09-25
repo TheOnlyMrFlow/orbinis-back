@@ -32,4 +32,4 @@ jobs:
         app-name: 'orbinis-cms'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_4a11794551404b8b81b63d3eeb0dc9cf }}
-        package: ./build
+        package: .
