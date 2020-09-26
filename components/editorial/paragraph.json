@@ -6,6 +6,16 @@
   },
   "options": {},
   "attributes": {
+    "title_FR": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "title_EN": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
     "content_FR": {
       "type": "text",
       "required": true,
