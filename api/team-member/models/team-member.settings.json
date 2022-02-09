@@ -32,6 +32,12 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
     }
   }
 }

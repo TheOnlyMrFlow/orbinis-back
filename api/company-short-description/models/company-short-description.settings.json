@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "company_short_description",
+  "collectionName": "company_description",
   "info": {
-    "name": "companyShortDescription"
+    "name": "companyDescription"
   },
   "options": {
     "increments": true,

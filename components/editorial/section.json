@@ -17,6 +17,57 @@
     },
     "content_EN": {
       "type": "text"
+    },
+    "title2_FR": {
+      "type": "string"
+    },
+    "title2_EN": {
+      "type": "string"
+    },
+    "sideQuoteAuthor_FR": {
+      "type": "string"
+    },
+    "sideQuoteAuthor_EN": {
+      "type": "string"
+    },
+    "image1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "image2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "image3": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "content2_FR": {
+      "type": "text"
+    },
+    "content2_EN": {
+      "type": "text"
+    },
+    "sideQuoteContent_FR": {
+      "type": "text"
+    },
+    "sideQuoteContent_EN": {
+      "type": "text"
     }
   }
 }
